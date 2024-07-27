@@ -18,14 +18,19 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-<img align="center" src="https://i.pinimg.com/originals/1e/39/e0/1e39e0ad1341ab4a323128836210a999.jpg" alt="wuzupkev" />
+  <img align="center" src="https://www.innodeed.com/wp-content/uploads/2022/11/Banner.jpg" alt="wuzupkev" />
 
   <h3 align="center">Best-README-Template</h3>
 
@@ -261,3 +266,4 @@ Use this space to list resources you find helpful and would like to give credit 
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+
