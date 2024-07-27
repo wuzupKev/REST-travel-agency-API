@@ -30,7 +30,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img align="center" src="https://drive.google.com/file/d/1a4T9FnyfeBzp2R09k6OKnWl-GAWk1pl5/view?usp=drive_link" alt="wuzupkev" />
+  <img align="center" src="https://www.xpand-it.com/wp-content/uploads/2021/04/AF_banner_Spring_1920x500.png" alt="wuzupkev" />
 
   <h3 align="center">Best-README-Template</h3>
 
