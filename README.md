@@ -30,7 +30,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img align="center" src="https://www.innodeed.com/wp-content/uploads/2022/11/Banner.jpg" alt="wuzupkev" />
+  <img align="center" src=""C:\Users\Kevin Chavarria\Downloads\Banner.jpg"" alt="wuzupkev" />
 
   <h3 align="center">Best-README-Template</h3>
 
