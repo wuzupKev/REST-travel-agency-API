@@ -30,9 +30,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+<img align="center" src="https://i.pinimg.com/originals/1e/39/e0/1e39e0ad1341ab4a323128836210a999.jpg" alt="wuzupkev" />
 
   <h3 align="center">Best-README-Template</h3>
 
