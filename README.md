@@ -30,7 +30,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img align="center" src=""C:\Users\Kevin Chavarria\Downloads\Banner.jpg"" alt="wuzupkev" />
+  <img align="center" src="https://drive.google.com/file/d/1a4T9FnyfeBzp2R09k6OKnWl-GAWk1pl5/view?usp=drive_link" alt="wuzupkev" />
 
   <h3 align="center">Best-README-Template</h3>
 
