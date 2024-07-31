@@ -35,7 +35,7 @@
   <h3 align="center">Tourism agency API</h3>
 
   <p align="center">
-    Just documenting this app.
+   <img src="http://ForTheBadge.com/images/badges/built-with-love.svg">
     <br />
   </p>
 </div>
