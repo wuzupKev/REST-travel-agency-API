@@ -50,7 +50,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[[Try the live API]](https://example.com)
+[Try the live API](https://example.com)
 
 ### Overview
 Our Tourist Company Web Application is a modern platform that makes it easy to browse, book, and manage travel services. Built with Spring Boot and PostgreSQL, it uses JWT for secure logins and includes a clear, interactive API guide through Swagger. Whether you're a traveler looking for your next adventure or an admin managing bookings, the app ensures a smooth, secure experience with up-to-date features and reliable performance.
