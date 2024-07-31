@@ -1,4 +1,4 @@
-package org.githubwuzupkev.models.entities;
+package org.githubwuzupkev.models.enums;
 
 public enum ServiceEnum {
     HOTEL_POR_NOCHE,

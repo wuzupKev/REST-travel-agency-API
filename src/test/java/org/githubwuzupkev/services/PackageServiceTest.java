@@ -2,22 +2,16 @@ package org.githubwuzupkev.services;
 
 import org.githubwuzupkev.exceptions.DuplicatedSkucodeFoundException;
 import org.githubwuzupkev.exceptions.IdNotFoundException;
-import org.githubwuzupkev.models.entities.PackageEntity;
-import org.githubwuzupkev.models.entities.ServiceEntity;
-import org.githubwuzupkev.models.entities.ServiceEnum;
 import org.githubwuzupkev.models.mappers.Mapper;
 import org.githubwuzupkev.models.requests.PackageRequest;
-import org.githubwuzupkev.models.requests.ServiceRequest;
 import org.githubwuzupkev.repositories.PackageRepository;
 import org.githubwuzupkev.repositories.ServiceRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.security.Provider;
 import java.util.*;
 
-import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class PackageServiceTest {
     @Autowired

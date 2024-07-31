@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.githubwuzupkev.models.auth.UserEntity;
 
 @Entity
 @Data
@@ -31,4 +32,8 @@ public class EmployeeEntity {
     @Column(length =20)
     private String professionalPosition;
     private double salary;
+
+    @OneToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @JoinColumn(name = "credential")
+    private UserEntity credential;
 }

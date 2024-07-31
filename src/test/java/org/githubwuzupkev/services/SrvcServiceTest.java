@@ -1,18 +1,12 @@
 package org.githubwuzupkev.services;
 
 import org.githubwuzupkev.exceptions.DuplicatedSkucodeFoundException;
-import org.githubwuzupkev.models.entities.ServiceEntity;
-import org.githubwuzupkev.models.entities.ServiceEnum;
+import org.githubwuzupkev.models.enums.ServiceEnum;
 import org.githubwuzupkev.models.requests.ServiceRequest;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class SrvcServiceTest {
     @Autowired
