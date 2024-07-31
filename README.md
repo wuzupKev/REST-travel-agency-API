@@ -32,7 +32,7 @@
 <div align="center">
   <img align="center" src="https://www.xpand-it.com/wp-content/uploads/2021/04/AF_banner_Spring_1920x500.png" alt="wuzupkev" />
 
-  <h3 align="center"># Tourism agency API</h3>
+  <h3 align="center">Tourism agency API</h3>
 
   <p align="center">
     Just documenting this app.
