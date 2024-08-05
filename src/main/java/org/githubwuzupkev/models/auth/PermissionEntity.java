@@ -1,10 +1,7 @@
 package org.githubwuzupkev.models.auth;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
 @Getter
@@ -12,6 +9,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "permissions")
+@Builder
 public class PermissionEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

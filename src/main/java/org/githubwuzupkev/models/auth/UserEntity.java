@@ -1,10 +1,7 @@
 package org.githubwuzupkev.models.auth;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.service.spi.InjectService;
 
 import java.util.HashSet;
@@ -16,6 +13,7 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "users")
+@Builder
 public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -6,5 +6,5 @@ public record EmployeeResponse(int id,
                                String homeAddress,String identityCardNumber,
                                String dateBirth,
                                String phoneNumber,
-                               String email) {
+                               String professionalPosition) {
 }

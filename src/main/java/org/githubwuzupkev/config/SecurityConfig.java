@@ -1,6 +1,9 @@
 package org.githubwuzupkev.config;
 
+import org.githubwuzupkev.config.filter.JwtValidator;
 import org.githubwuzupkev.services.impl.UserDetailImp;
+import org.githubwuzupkev.utils.JwtUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -14,12 +17,16 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
+    @Autowired
+    private JwtUtil jwtUtil;
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         return httpSecurity
@@ -29,9 +36,11 @@ public class SecurityConfig {
                 .authorizeHttpRequests(http -> {
                     // Configurar los endpoints publicos
                     http.requestMatchers(HttpMethod.POST, "/api/v1/auth/**").permitAll();
+                    http.requestMatchers(HttpMethod.GET,"/api/v1/customer/**").hasAnyRole("DEVELOPER");
                     // Configurar el resto de endpoint - NO ESPECIFICADOS
                     http.anyRequest().authenticated();
                 })
+                .addFilterBefore(new JwtValidator(jwtUtil),BasicAuthenticationFilter.class)
                 .build();
     }
 
