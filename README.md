@@ -32,7 +32,7 @@
 <div align="center">
   <img align="center" src="https://www.xpand-it.com/wp-content/uploads/2021/04/AF_banner_Spring_1920x500.png" alt="wuzupkev" />
 
-  <h3 align="center">Tourism agency API</h3>
+  <h3 align="center">TRAVEL AGENCY MANAGER</h3>
 
   <p align="center">
    <img src="http://ForTheBadge.com/images/badges/built-with-love.svg">
@@ -53,23 +53,21 @@
 [Try the live API](https://example.com)
 
 ### Overview
-Our Tourist Company Web Application is a modern platform that makes it easy to browse, book, and manage travel services. Built with Spring Boot and PostgreSQL, it uses JWT for secure logins and includes a clear, interactive API guide through Swagger. Whether you're a traveler looking for your next adventure or an admin managing bookings, the app ensures a smooth, secure experience with up-to-date features and reliable performance.
+Easy to browse, book, and manage travel services. Built with Spring Boot and PostgreSQL, it uses JWT for secure logins and includes a clear, interactive API guide through Swagger. Whether you're a traveler looking for your next adventure or an admin managing bookings, the app ensures a smooth, secure experience with up-to-date features and reliable performance.
 
 
 
 
 ### Built With
+* <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white">
+*  <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F.svg?style=for-the-badge&logo=Spring-Boot&logoColor=white">
+*  <img src="https://img.shields.io/badge/PostgreSQL-4169E1.svg?style=for-the-badge&logo=PostgreSQL&logoColor=white">
+* <img src="https://img.shields.io/badge/Swagger-85EA2D.svg?style=for-the-badge&logo=Swagger&logoColor=black">
+*  <img src="https://img.shields.io/badge/Spring%20Security-6DB33F.svg?style=for-the-badge&logo=Spring-Security&logoColor=white">
+*  <img src="https://img.shields.io/badge/Docker-2496ED.svg?style=for-the-badge&logo=Docker&logoColor=white">
+*  <img src="https://img.shields.io/badge/JUnit5-25A162.svg?style=for-the-badge&logo=JUnit5&logoColor=white">
+* <img src="https://img.shields.io/badge/Hibernate-59666C.svg?style=for-the-badge&logo=Hibernate&logoColor=white">
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
