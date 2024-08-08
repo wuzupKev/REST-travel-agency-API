@@ -14,6 +14,7 @@ import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -34,15 +35,20 @@ public class SecurityConfig {
                 .httpBasic(Customizer.withDefaults())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(http -> {
-                    // Configurar los endpoints publicos
+                    // public endpoints
                     http.requestMatchers(HttpMethod.POST, "/api/v1/auth/**").permitAll();
-                    http.requestMatchers(HttpMethod.GET,"/api/v1/customer/**").hasAnyRole("DEVELOPER");
-                    // Configurar el resto de endpoint - NO ESPECIFICADOS
+                    // rest of them
                     http.anyRequest().authenticated();
                 })
                 .addFilterBefore(new JwtValidator(jwtUtil),BasicAuthenticationFilter.class)
                 .build();
     }
+
+    @Bean
+    public WebSecurityCustomizer webSecurityCustomizer(){
+        return (web -> web.ignoring().requestMatchers("/swagger-ui/**","/v3/api-docs/**"));
+    }
+
 
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {

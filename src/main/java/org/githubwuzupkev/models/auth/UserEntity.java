@@ -5,6 +5,7 @@ import lombok.*;
 import org.hibernate.service.spi.InjectService;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity

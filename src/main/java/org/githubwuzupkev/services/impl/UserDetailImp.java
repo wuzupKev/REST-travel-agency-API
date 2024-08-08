@@ -87,6 +87,8 @@ public class UserDetailImp implements UserDetailsService {
                 .identityCardNumber(employeeRequest.identityCardNumber())
                 .dateBirth(employeeRequest.dateBirth())
                 .phoneNumber(employeeRequest.phoneNumber())
+                .professionalPosition(employeeRequest.professionalPosition())
+                .salary(employeeRequest.salary())
                 .credential(user)
 
                 .build();
