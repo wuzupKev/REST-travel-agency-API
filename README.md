@@ -30,7 +30,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img align="center" src="https://www.xpand-it.com/wp-content/uploads/2021/04/AF_banner_Spring_1920x500.png" alt="wuzupkev" />
+  <img align="center" src="https://github.com/user-attachments/assets/244651d2-7764-48eb-b56d-05e302edaaa9" alt="wuzupkev" />
 
   <h3 align="center">TRAVEL AGENCY MANAGER</h3>
 
