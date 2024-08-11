@@ -110,7 +110,7 @@ Built by Kevin Chavarria , all rights reserverd. See `LICENSE.txt` for more info
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@Discord]("https:discordapp.com/users/ohkkey") - kvnthehuman@gmail.com
+Your Name - [@Discord](discordapp.com/users/ohkkey) - kvnthehuman@gmail.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
