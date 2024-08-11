@@ -19,65 +19,7 @@ public class TravelAgencyManagerApiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TravelAgencyManagerApiApplication.class, args);
 	}
-	@Bean
-	CommandLineRunner init(UserRepository userRepository) {
-		return args -> {
-			/* Create PERMISSIONS */
-			PermissionEntity createPermission = PermissionEntity.builder()
-					.name("CREATE")
-					.build();
 
-			PermissionEntity readPermission = PermissionEntity.builder()
-					.name("READ")
-					.build();
-
-			PermissionEntity updatePermission = PermissionEntity.builder()
-					.name("UPDATE")
-					.build();
-
-			PermissionEntity deletePermission = PermissionEntity.builder()
-					.name("DELETE")
-					.build();
-
-			PermissionEntity refactorPermission = PermissionEntity.builder()
-					.name("REFACTOR")
-					.build();
-
-			/* Create ROLES */
-			RoleEntity roleAdmin = RoleEntity.builder()
-					.roleEnum(RoleEnum.ADMIN)
-					.permissionList(Set.of(createPermission, readPermission, updatePermission, deletePermission))
-					.build();
-
-
-			RoleEntity roleDeveloper = RoleEntity.builder()
-					.roleEnum(RoleEnum.DEVELOPER)
-					.permissionList(Set.of(createPermission, readPermission, updatePermission, deletePermission, refactorPermission))
-					.build();
-
-			/* CREATE USERS */
-			UserEntity userSantiago = UserEntity.builder()
-					.username("santiago")
-					.password("$2a$10$cMY29RPYoIHMJSuwRfoD3eQxU1J5Rww4VnNOUOAEPqCBshkNfrEf6")
-					.isEnabled(true)
-					.isAccountNonExpired(true)
-					.isAccountNonLocked(true)
-					.isCredentialsNonExpired(true)
-					.roles(Set.of(roleAdmin))
-					.build();
-
-			UserEntity userKevin = UserEntity.builder()
-					.username("Kevin")
-					.password("$2a$10$cMY29RPYoIHMJSuwRfoD3eQxU1J5Rww4VnNOUOAEPqCBshkNfrEf6")
-					.isEnabled(true)
-					.isAccountNonExpired(true)
-					.isAccountNonLocked(true)
-					.isCredentialsNonExpired(true)
-					.roles(Set.of(roleDeveloper))
-					.build();
-			userRepository.saveAll(List.of(userSantiago,userKevin));
-		};
-	}
 
 
 }

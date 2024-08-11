@@ -1,0 +1,30 @@
+version: "3.9"
+services:
+  spring-app:
+    image: spring-app-1.0
+    container_name: spring-api-container
+    ports:
+      - "8080:8080"
+    networks:
+      - spring-network
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres
+    container_name: api_manager
+    environment:
+      POSTGRES_PASSWORD: wuzupkev
+      POSTGRES_USER: Ol9lf7r4ehkubDYsjjN0aeFeMNrzD1FW
+      POSTGRES_DB: postgres_travel_agency
+
+    ports:
+      - "5431:5432"
+    networks:
+      - spring-network
+    volumes:
+      - postgres-volume:/var/lib/postgres
+networks:
+  spring-network:
+volumes:
+  postgres-volume:
